@@ -1,0 +1,39 @@
+.ad {
+	max-width: 1200px;
+	margin: 35px auto;
+
+	&-wrap {
+		width: calc(100% - 30px);
+    	margin: auto;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		min-height: 250px;
+
+		@media only screen and (max-width: 768px) {
+	    	min-height: 350px;
+	    }
+	}
+
+	&-left {
+		width: calc(30% - 5px);
+
+		@media only screen and (max-width: 768px) {
+	    	width: 100%;
+	    }
+	}
+	&-right {
+		width: calc(70% - 5px);
+
+		@media only screen and (max-width: 768px) {
+	    	width: 100%;
+	    }
+	}
+
+	&-left,
+	&-right {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}

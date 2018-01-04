@@ -1,0 +1,14 @@
+input[type="text"] {
+	width: calc(80% - 50px);
+    height: 45px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: transparent;
+    padding: 0 20px;
+    outline: none;
+    margin-bottom: 5px;
+
+	@media only screen and (max-width: 768px) {
+		width: calc(100% - 40px);
+	}
+}

@@ -1,0 +1,135 @@
+.landing {
+	text-align: center;
+    color: #3B4245;
+    background-color: #FDFBF8;
+
+    &-wrap {
+    	width: calc(100% - 30px);
+    	margin: auto;
+    }
+}
+
+.language {
+    margin-top: 25px;
+
+    a {
+	    color: #3B4245;
+	    margin: 0 15px;
+	    text-decoration: none;
+
+	    &:hover {
+	    	color: $link-color;
+	    }
+	}
+	.active {
+		text-decoration: underline;
+	}
+}
+
+.ourgambia-logo {
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    h1 {
+    	margin-bottom: 0;
+    }
+    img {
+	    vertical-align: middle;
+	}
+}
+
+.classifieds-row {
+	max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 12px;
+    background-image: url(../images/banner.jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &--wrap {
+    	display: flex;
+    	flex-flow: row wrap;
+    }
+}
+
+.classified-block {
+    width: calc(100% / 8);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:first-child {
+    	font-weight: 700;
+    }
+    a {
+	    text-decoration: none;
+	    color: #ffffff;
+	    font-size: 16px;
+
+	    &:hover {
+	    	color: $link-color;
+	    	text-decoration: underline;
+	    }
+	}
+	img {
+		border-radius: 50%;
+		vertical-align: middle;
+		margin-right: 5px;
+	}
+
+	@media only screen and (max-width: 900px) {
+    	width: calc(100% / 4);
+    	margin: 20px auto;
+    }
+
+    @media only screen and (max-width: 480px) {
+    	width: calc(100% / 2);
+    }
+}
+
+.ourgambia-headline {
+	margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.services {
+	
+	&-wrap {
+		max-width: 1200px;
+	    margin: 0 auto;
+	    padding: 20px;
+	    border: 1px solid #EEEEEC;
+	    background-color: #fff;
+	    display: flex;
+	    flex-flow: row wrap;
+	}
+}
+
+.service {
+	width: calc(100% / 3);
+    margin: auto;
+    text-decoration: none;
+    color: #000000;
+
+    &:hover {
+    	color: $link-color;
+    }
+    &-name {
+    	font-weight: 100;
+    }
+    &-desc {
+
+    	@media only screen and (max-width: 780px) {
+		    min-height: 60px;
+    	}
+    }
+
+    @media only screen and (max-width: 780px) {
+    	width: calc(100% / 2);
+    	min-height: 125px;
+    }
+}

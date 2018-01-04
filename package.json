@@ -1,0 +1,12 @@
+{
+  "name": "ourgambia",
+  "version": "1.0.0",
+  "description": "With OurGambia, we are taking the Gambian economy online and enabling Gambian businesses to find new customers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/scss -o assets/css"
+  },
+  "author": "Buba Manjang",
+  "license": "ISC"
+}

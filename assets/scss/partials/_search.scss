@@ -1,0 +1,87 @@
+.classifieds-search {
+	width: calc(100% - 30px);
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+
+    &--filter {
+    	width: 20%;
+    }
+    &--content {
+    	width: 80%;
+    }
+    &--header {
+    	display: flex;
+	    justify-content: space-between;
+	    margin-bottom: 20px;
+    }
+    &--header-like {
+    	cursor: pointer;
+    }
+    &--cat {
+    	margin: 10px 0 30px;
+	    padding: 10px;
+	    background-color: #eee;
+	    overflow: hidden;
+    }
+    &--cat-all {
+    	display: flex;
+    	flex-flow: row wrap;
+    	border-top: 1px dotted #cacaca;
+	    width: 100%;
+	    margin-top: 10px;
+    }
+    &--cat-link {
+    	display: block;
+	    width: calc(100% / 4);
+	    margin: 3px 0;
+		text-decoration: none;
+		color: #000000;
+
+		&:hover {
+			color: $link-color;
+		}
+    }
+    &--cat-show-all {
+    	text-align: center;
+	    border-top: 1px dotted #cacaca;
+	    padding-top: 7px;
+	    padding-bottom: 0;
+    }
+}
+
+.top-ads {
+	
+	&-wrap {
+		display: flex;
+    	flex-flow: row wrap;
+	}
+	&-card {
+		width: calc(100% / 3);
+	    max-width: 240px;
+	    margin: 8px;
+	    box-shadow: 0 1px 1px 2px #ddd;
+	}
+	&-image img {
+		height: 180px;
+	    width: 100%;
+	    box-shadow: inset 0 -20px 40px -10px grey;
+	    display: block;
+	}
+	&-body {
+		padding: 10px 20px;
+	    height: 70px;
+	    text-align: center;
+	}
+	&-footer {
+		border-top: 1px solid #ddd;
+	    padding: 12px;
+	    min-height: 36px;
+	}
+	&-footer a {
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+}
