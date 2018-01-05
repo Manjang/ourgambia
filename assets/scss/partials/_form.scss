@@ -1,14 +1,31 @@
-input[type="text"] {
-	width: calc(80% - 50px);
-    height: 45px;
-    font-size: 20px;
-    border-radius: 5px;
-    border: transparent;
-    padding: 0 20px;
-    outline: none;
-    margin-bottom: 5px;
+.banner {
 
-	@media only screen and (max-width: 768px) {
-		width: calc(100% - 40px);
-	}
+    input[type="text"] {
+    	width: calc(80% - 50px);
+        height: 45px;
+        font-size: 20px;
+        border-radius: 5px;
+        border: transparent;
+        padding: 0 20px;
+        outline: none;
+        margin-bottom: 5px;
+
+    	@media only screen and (max-width: 768px) {
+    		width: calc(100% - 40px);
+    	}
+    }
+}
+
+.classifieds-search--filter {
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 15px;
+
+        select {
+            margin: 5px;
+            padding: 5px;
+        }
+    }
 }

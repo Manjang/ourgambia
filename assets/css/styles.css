@@ -5,20 +5,34 @@
   .top-header-wrap {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    min-height: 125px; }
+    min-height: 125px;
+    width: calc(100% - 30px);
+    max-width: 1200px;
+    margin: auto; }
+    @media only screen and (max-width: 768px) {
+      .top-header-wrap {
+        margin: 25px auto; } }
   .top-header-card {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; }
+    width: 100%;
+    margin: 10px 0; }
     @media only screen and (min-width: 768px) {
       .top-header-card {
-        width: calc(100% / 3); } }
+        width: calc(100% / 3); }
+        .top-header-card:first-child {
+          justify-content: flex-start; }
+        .top-header-card:last-child {
+          justify-content: flex-end; } }
   .top-header a {
     color: #000000;
     text-decoration: none; }
+  .top-header--login-link {
+    margin-left: 5px; }
+  .top-header--help {
+    margin-left: 15px;
+    font-size: 25px; }
 
 .nav {
   background-color: #0e1027; }
@@ -38,7 +52,7 @@
       color: #ffffff;
       text-decoration: none; }
       .menu-item a:hover {
-        color: #dc143c; }
+        color: #49c5b6; }
 
 html,
 body {
@@ -106,8 +120,11 @@ body {
   display: flex;
   justify-content: center;
   margin: 20px; }
+  @media only screen and (max-width: 768px) {
+    .search-banner-wrap img {
+      width: 100%; } }
 
-input[type="text"] {
+.banner input[type="text"] {
   width: calc(80% - 50px);
   height: 45px;
   font-size: 20px;
@@ -117,8 +134,16 @@ input[type="text"] {
   outline: none;
   margin-bottom: 5px; }
   @media only screen and (max-width: 768px) {
-    input[type="text"] {
+    .banner input[type="text"] {
       width: calc(100% - 40px); } }
+
+.classifieds-search--filter form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px; }
+  .classifieds-search--filter form select {
+    margin: 5px;
+    padding: 5px; }
 
 .trending {
   width: calc(100% - 30px);
@@ -189,7 +214,7 @@ input[type="text"] {
     font-weight: 700;
     color: #000000 !important; }
   .category-card--link:hover, .category-card--view-all:hover {
-    color: #dc143c; }
+    color: #49c5b6; }
   .category-card--content-link {
     color: #005F96;
     background: #EEE;
@@ -200,7 +225,7 @@ input[type="text"] {
     border-radius: 20px;
     font-size: 13px; }
     .category-card--content-link:hover {
-      color: #dc143c; }
+      color: #49c5b6; }
 
 .ad {
   max-width: 1200px;
@@ -244,7 +269,7 @@ input[type="text"] {
   .apps-cta {
     font-size: 26px; }
   .apps-cta--subheadline {
-    color: #dc143c;
+    color: #49c5b6;
     font-weight: 700; }
   .apps-group img {
     width: 125px;
@@ -256,7 +281,7 @@ footer {
     text-decoration: none;
     color: #000000; }
     footer a:hover {
-      color: #dc143c; }
+      color: #49c5b6; }
 
 .footer-widgets-wrap {
   max-width: 1200px;
@@ -290,7 +315,7 @@ footer {
     margin: 0 15px;
     text-decoration: none; }
     .language a:hover {
-      color: #dc143c; }
+      color: #49c5b6; }
   .language .active {
     text-decoration: underline; }
 
@@ -329,7 +354,7 @@ footer {
     color: #ffffff;
     font-size: 16px; }
     .classified-block a:hover {
-      color: #dc143c;
+      color: #49c5b6;
       text-decoration: underline; }
   .classified-block img {
     border-radius: 50%;
@@ -362,7 +387,7 @@ footer {
   text-decoration: none;
   color: #000000; }
   .service:hover {
-    color: #dc143c; }
+    color: #49c5b6; }
   .service-name {
     font-weight: 100; }
   @media only screen and (max-width: 780px) {
@@ -380,9 +405,24 @@ footer {
   display: flex;
   flex-flow: row wrap; }
   .classifieds-search--filter {
-    width: 20%; }
+    width: calc(20% - 15px);
+    margin: 0 auto;
+    background-color: #eeeeee; }
+    @media only screen and (max-width: 768px) {
+      .classifieds-search--filter {
+        width: calc(100% - 30px); } }
   .classifieds-search--content {
-    width: 80%; }
+    width: 60%; }
+    @media only screen and (max-width: 768px) {
+      .classifieds-search--content {
+        width: 100%; } }
+  .classifieds-search--ads {
+    width: 20%; }
+    @media only screen and (max-width: 768px) {
+      .classifieds-search--ads {
+        width: calc(100% - 30px); } }
+  .classifieds-search--ads-card img {
+    width: 100%; }
   .classifieds-search--header {
     display: flex;
     justify-content: space-between;
@@ -407,22 +447,48 @@ footer {
     text-decoration: none;
     color: #000000; }
     .classifieds-search--cat-link:hover {
-      color: #dc143c; }
+      color: #49c5b6; }
   .classifieds-search--cat-show-all {
     text-align: center;
     border-top: 1px dotted #cacaca;
     padding-top: 7px;
     padding-bottom: 0; }
+  .classifieds-search--header-result {
+    font-weight: 700;
+    font-size: 24px; }
 
 .top-ads-wrap {
   display: flex;
   flex-flow: row wrap; }
 
 .top-ads-card {
-  width: calc(100% / 3);
+  width: calc((100% / 3) - 16px);
   max-width: 240px;
   margin: 8px;
   box-shadow: 0 1px 1px 2px #ddd; }
+  @media only screen and (max-width: 480px) {
+    .top-ads-card {
+      width: 100%;
+      max-width: 310px;
+      margin: 8px auto; } }
+
+.top-ads-name {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px; }
+  .top-ads-name:hover {
+    color: #49c5b6; }
+
+.top-ads-price {
+  color: #dc143c; }
+
+.top-ads-info {
+  font-size: 13px; }
+
+.top-ads-info span {
+  margin: 0 5px; }
 
 .top-ads-image img {
   height: 180px;
@@ -444,6 +510,76 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.featured-ads-card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  border-bottom: 1px dotted #000000; }
+  .featured-ads-card:last-child {
+    border-bottom: 0; }
+
+.featured-ads-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px 28px 5px 0;
+  text-transform: uppercase; }
+
+.featured-ads-title {
+  text-decoration: none;
+  color: #000000; }
+  .featured-ads-title:hover {
+    color: #49c5b6; }
+
+.featured-ads-price {
+  color: #dc143c; }
+
+.featured-ads-date {
+  font-size: 12px;
+  letter-spacing: 0.5px; }
+
+.featured-ads-desc {
+  padding: 0;
+  columns: 2;
+  font-size: 14px; }
+
+.featured-ads-desc li {
+  padding: 5px 0;
+  list-style: none; }
+
+.featured-ads-group {
+  display: flex;
+  flex-flow: row wrap; }
+
+.featured-ads-thumbnail {
+  width: 30%; }
+  .featured-ads-thumbnail img {
+    width: 100%; }
+
+.featured-ads-body {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 20px);
+  margin: 0 auto; }
+
+.featured-ads-verified {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0; }
+
+.featured-ads-report span {
+  margin: 0 10px; }
+
+.breadcrumbs {
+  text-decoration: none;
+  color: #000000; }
+  .breadcrumbs:hover {
+    color: #49c5b6; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
