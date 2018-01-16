@@ -2,10 +2,10 @@
 <html>
 <head>
 	<title>Gambia Classifieds - Best place to rent a property, sell a car or find a job in The Gambia</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
 	<meta name="description" content="OurGambia is the leading internet platform in the Gambia, which offers easy online and mobile shopping, travel, classifieds and services platform. ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/images/logo-alt.png">
+    <link rel="icon" type="image/png" href="../assets/images/logo-alt.png">
 </head>
 <body>
 	<header>
@@ -13,16 +13,16 @@
 			<div class="top-header-wrap">
 				<div class="top-header-card">
 					<i class="fa fa-sign-in" aria-hidden="true"></i>
-					<a href="#" class="top-header--login-link">Log in or sign up</a>
+					<a href="../user/index.html" class="top-header--login-link">Log in or sign up</a>
 					<a href="#" class="top-header--help"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
 				</div>
 
 				<div class="top-header-card">
-					<a href="#" class="logo"><img src="assets/images/logo.png"></a>
+					<a href="#" class="logo"><img src="../assets/images/logo.png"></a>
 				</div>
 
 				<div class="top-header-card">
-					<a href="#" class="btn">Place Your Ad</a>
+					<a href="../place_ad/index.html" class="btn">Place Your Ad</a>
 				</div>
 			</div>
 		</div>
@@ -41,71 +41,63 @@
 
 	<div class="search-banner">
 		<div class="search-banner-wrap">
-			<img src="assets/images/search-ad.png" alt="Our Gambia Classifieds">
+			<img src="../assets/images/search-ad.png" alt="Our Gambia Classifieds">
 		</div>
 	</div>
 
 	<div class="classifieds-search">
 		<div class="classifieds-search--filter">
-			<div class="classifieds-search--headline">Search</div>
-			<form method="GET" action="#">
-				<select>
-					<option>Motors</option>
-					<option>Property for Sale</option>
-					<option>Property for Rent</option>
-					<option>Laptops</option>	
-				</select>
+			<div class="classifieds-search--filter-wrap">
+				<div class="classifieds-search--headline">Search</div>
+				<form method="GET" action="#">
+					<select>
+						<option>Motors</option>
+						<option>Property for Sale</option>
+						<option>Property for Rent</option>
+						<option>Laptops</option>	
+					</select>
 
-				<select>
-					<option>Newest to oldest</option>
-					<option>Oldest to newest</option>
-					<option>Price Highest to Lowest</option>
-					<option>Price Lowest to Highest</option>	
-				</select>
+					<select>
+						<option>Newest to oldest</option>
+						<option>Oldest to newest</option>
+						<option>Price Highest to Lowest</option>
+						<option>Price Lowest to Highest</option>	
+					</select>
 
-				<select>
-					<option>All Makes</option>
-					<option>Audi</option>
-					<option>BMW</option>
-					<option>Mercedes Benz</option>	
-				</select>
+					<select>
+						<option>All Makes</option>
+						<option>Audi</option>
+						<option>BMW</option>
+						<option>Mercedes Benz</option>	
+					</select>
 
-				<div class="classifieds-search--price">
-					<span>Price (GMD)</span>
-					<span>
-						<input type="text" name="start-price">
-						<input type="text" name="end-price">
-					</span>
-				</div>
+					<div class="classifieds-search--price">
+						<span>Price (GMD)</span>
+						<span>
+							<input type="text" name="start-price" placeholder="Min Price">
+							<input type="text" name="end-price" placeholder="Max Price">
+						</span>
+					</div>
 
-				<div class="classifieds-search--Year">
-					<span>Year (min/max)</span>
-					<span>
-						<select>
-							<option>2018</option>
-							<option>2019</option>
-							<option>2020</option>
-							<option>2021</option>	
-						</select>
-						<select>
-							<option>2018</option>
-							<option>2019</option>
-							<option>2020</option>
-							<option>2021</option>	
-						</select>
-					</span>
-				</div>
-
-				<div class="classifieds-search--km">
-					<span>Price (GMD)</span>
-					<span>
-						<input type="text" name="start-km">
-						<input type="text" name="end-km">
-					</span>
-				</div>
-
-				<input type="text" name="search_input">
-			</form>
+					<div class="classifieds-search--year">
+						<span>Year (min/max)</span>
+						<span>
+							<select>
+								<option>2018</option>
+								<option>2019</option>
+								<option>2020</option>
+								<option>2021</option>	
+							</select>
+							<select>
+								<option>2018</option>
+								<option>2019</option>
+								<option>2020</option>
+								<option>2021</option>	
+							</select>
+						</span>
+					</div>
+				</form>
+			</div>
 		</div>
 
 		<div class="classifieds-search--content">
@@ -151,7 +143,7 @@
 			<div class="top-ads">
 				<div class="top-ads-wrap">
 					<div class="top-ads-card">
-						<a href="#" class="top-ads-image"><img src="assets/images/car.jpeg" alt="our gambia ad"></a>
+						<a href="#" class="top-ads-image"><img src="../assets/images/car.jpeg" alt="our gambia ad"></a>
 						<div class="top-ads-body">
 							<a href="#" class="top-ads-name">Jaquar XKR 2010</a>
 							<div class="top-ads-price">D225,000</div>
@@ -161,12 +153,12 @@
 							</div>
 						</div>
 						<div class="top-ads-footer">
-							<a href="#"><img src="assets/images/verified-logo.jpg"></a>
+							<a href="#"><img src="../assets/images/verified-logo.jpg"></a>
 						</div>
 					</div>
 
 					<div class="top-ads-card">
-						<a href="#" class="top-ads-image"><img src="assets/images/car1.jpeg" alt="our gambia ad"></a>
+						<a href="#" class="top-ads-image"><img src="../assets/images/car1.jpeg" alt="our gambia ad"></a>
 						<div class="top-ads-body">
 							<a href="#" class="top-ads-name">BMW X6 2012</a>
 							<div class="top-ads-price">D425,000</div>
@@ -176,12 +168,12 @@
 							</div>
 						</div>
 						<div class="top-ads-footer">
-							<a href="#"><img src="assets/images/verified-logo.jpg"></a>
+							<a href="#"><img src="../assets/images/verified-logo.jpg"></a>
 						</div>
 					</div>
 
 					<div class="top-ads-card">
-						<a href="#" class="top-ads-image"><img src="assets/images/car2.jpeg" alt="our gambia ad"></a>
+						<a href="#" class="top-ads-image"><img src="../assets/images/car2.jpeg" alt="our gambia ad"></a>
 						<div class="top-ads-body">
 							<a href="#" class="top-ads-name">Maserati SLR 2014</a>
 							<div class="top-ads-price">D305,000</div>
@@ -191,7 +183,7 @@
 							</div>
 						</div>
 						<div class="top-ads-footer">
-							<a href="#"><img src="assets/images/verified-logo.jpg"></a>
+							<a href="#"><img src="../assets/images/verified-logo.jpg"></a>
 						</div>
 					</div>
 				</div>
@@ -206,7 +198,7 @@
 						</div>
 
 						<div class="featured-ads-group">
-							<a href="#" class="featured-ads-thumbnail"><img src="assets/images/car.jpeg" alt="Our Gambia ads"></a>
+							<a href="#" class="featured-ads-thumbnail"><img src="../assets/images/car.jpeg" alt="Our Gambia ads"></a>
 							<div class="featured-ads-body">
 								<a href="#" class="breadcrumbs">Used Cars for Sale ‪>‪ BMW ‪>‪ X6</a>
 								<span class="featured-ads-date">4 January 2018</span>
@@ -218,7 +210,7 @@
 								</ul>
 							</div>
 							<div class="featured-ads-verified">
-								<a href="#" class="featured-ads-verified-image"><img src="assets/images/verified-logo.jpg"></a>
+								<a href="#" class="featured-ads-verified-image"><img src="../assets/images/verified-logo.jpg"></a>
 								<div class="featured-ads-report">
 									<span><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></span>
 									<span><a href="#"><i class="fa fa-flag" aria-hidden="true"></i></a></span>
@@ -234,7 +226,7 @@
 						</div>
 
 						<div class="featured-ads-group">
-							<a href="#" class="featured-ads-thumbnail"><img src="assets/images/car.jpeg" alt="Our Gambia ads"></a>
+							<a href="#" class="featured-ads-thumbnail"><img src="../assets/images/car.jpeg" alt="Our Gambia ads"></a>
 							<div class="featured-ads-body">
 								<a href="#" class="breadcrumbs">Used Cars for Sale ‪>‪ BMW ‪>‪ X6</a>
 								<span class="featured-ads-date">4 January 2018</span>
@@ -246,7 +238,7 @@
 								</ul>
 							</div>
 							<div class="featured-ads-verified">
-								<a href="#" class="featured-ads-verified-image"><img src="assets/images/verified-logo.jpg"></a>
+								<a href="#" class="featured-ads-verified-image"><img src="../assets/images/verified-logo.jpg"></a>
 								<div class="featured-ads-report">
 									<span><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></span>
 									<span><a href="#"><i class="fa fa-flag" aria-hidden="true"></i></a></span>
@@ -262,7 +254,7 @@
 						</div>
 
 						<div class="featured-ads-group">
-							<a href="#" class="featured-ads-thumbnail"><img src="assets/images/car.jpeg" alt="Our Gambia ads"></a>
+							<a href="#" class="featured-ads-thumbnail"><img src="../assets/images/car.jpeg" alt="Our Gambia ads"></a>
 							<div class="featured-ads-body">
 								<a href="#" class="breadcrumbs">Used Cars for Sale ‪>‪ BMW ‪>‪ X6</a>
 								<span class="featured-ads-date">4 January 2018</span>
@@ -274,7 +266,7 @@
 								</ul>
 							</div>
 							<div class="featured-ads-verified">
-								<a href="#" class="featured-ads-verified-image"><img src="assets/images/verified-logo.jpg"></a>
+								<a href="#" class="featured-ads-verified-image"><img src="../assets/images/verified-logo.jpg"></a>
 								<div class="featured-ads-report">
 									<span><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></span>
 									<span><a href="#"><i class="fa fa-flag" aria-hidden="true"></i></a></span>
@@ -290,7 +282,7 @@
 						</div>
 
 						<div class="featured-ads-group">
-							<a href="#" class="featured-ads-thumbnail"><img src="assets/images/car.jpeg" alt="Our Gambia ads"></a>
+							<a href="#" class="featured-ads-thumbnail"><img src="../assets/images/car.jpeg" alt="Our Gambia ads"></a>
 							<div class="featured-ads-body">
 								<a href="#" class="breadcrumbs">Used Cars for Sale ‪>‪ BMW ‪>‪ X6</a>
 								<span class="featured-ads-date">4 January 2018</span>
@@ -302,7 +294,7 @@
 								</ul>
 							</div>
 							<div class="featured-ads-verified">
-								<a href="#" class="featured-ads-verified-image"><img src="assets/images/verified-logo.jpg"></a>
+								<a href="#" class="featured-ads-verified-image"><img src="../assets/images/verified-logo.jpg"></a>
 								<div class="featured-ads-report">
 									<span><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></span>
 									<span><a href="#"><i class="fa fa-flag" aria-hidden="true"></i></a></span>
@@ -317,7 +309,7 @@
 		<div class="classifieds-search--ads">
 			<div class="classifieds-search--ads-wrap">
 				<a href="#" class="classifieds-search--ads-card">
-					<img src="assets/images/ourgambia.png" alt="Our Gambia ad">
+					<img src="../assets/images/ourgambia.png" alt="Our Gambia ad">
 				</a>
 			</div>
 		</div>

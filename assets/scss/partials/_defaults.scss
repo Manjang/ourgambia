@@ -6,3 +6,17 @@
 		color: $link-color;
 	}
 }
+
+.not-found {
+	width: calc(100% - 70px);
+    max-width: 720px;
+    line-height: 45px;
+    padding: 20px;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 32px;
+
+    span {
+    	color: $brand-color-alt;
+    }
+}

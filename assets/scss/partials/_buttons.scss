@@ -1,5 +1,5 @@
 .btn {
-    color: #ffffff !important;
+    color: #ffffff;
     background-color: crimson;
     border-radius: 5px;
     padding: 15px 50px;
@@ -8,5 +8,7 @@
 
     &:hover {
     	color: #000000;
+    	background-color: $link-color;
+    	transition: 300ms ease-in;
     }
 }

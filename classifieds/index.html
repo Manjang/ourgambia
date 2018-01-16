@@ -2,10 +2,11 @@
 <html>
 <head>
 	<title>Gambia Classifieds - Best place to rent a property, sell a car or find a job in The Gambia</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
 	<meta name="description" content="OurGambia is the leading internet platform in the Gambia, which offers easy online and mobile shopping, travel, classifieds and services platform. ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/images/logo-alt.png">
+    <link rel="icon" type="image/png" href="../assets/images/logo-alt.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 <body>
 	<header>
@@ -13,16 +14,16 @@
 			<div class="top-header-wrap">
 				<div class="top-header-card">
 					<i class="fa fa-sign-in" aria-hidden="true"></i>
-					<a href="#" class="top-header--login-link">Log in or sign up</a>
+					<a href="../user/index.html" class="top-header--login-link">Log in or sign up</a>
 					<a href="#" class="top-header--help"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
 				</div>
 
 				<div class="top-header-card">
-					<a href="#" class="logo"><img src="assets/images/logo.png"></a>
+					<a href="#" class="logo"><img src="../assets/images/logo.png"></a>
 				</div>
 
 				<div class="top-header-card">
-					<a href="#" class="btn">Place Your Ad</a>
+					<a href="../place_ad/index.html" class="btn">Place Your Ad</a>
 				</div>
 			</div>
 		</div>
@@ -39,12 +40,12 @@
 		</div>
 	</header>
 
-	<div class="banner" style="background-image: url(assets/images/banner.jpg);">
+	<div class="banner" style="background-image: url(../assets/images/banner.jpg);">
 		<div class="banner-wrap">
 			<h4 class="banner-headline">The best place to buy your house, sell your car or find a job in The Gambia.</h4>
 
-			<div class="search">
-				<form method="GET" action="#">
+			<div class="search" ng-app="">
+				<form method="GET" action="search.html">
 					<input type="text" name="search" placeholder="Enter Keywords">
 					<a href="#" class="btn">Search</a>
 				</form>
@@ -228,8 +229,8 @@
 
 	<div class="ad">
 		<div class="ad-wrap">
-			<a href="#" class="ad-left" style="background-image: url(assets/images/ourgambia.png);"></a>
-			<a href="#" class="ad-right" style="background-image: url(assets/images/gambia.jpg);"></a>
+			<a href="#" class="ad-left" style="background-image: url(../assets/images/ourgambia.png);"></a>
+			<a href="#" class="ad-right" style="background-image: url(../assets/images/gambia.jpg);"></a>
 		</div>
 	</div>
 
@@ -241,8 +242,8 @@
 			</div>
 
 			<div class="apps-group">
-				<a href="#" class="android-app"><img src="assets/images/ios-app.png" alt="Our Gambia ios app"></a>
-				<a href="#" class="ios-app"><img src="assets/images/android-app.png" alt="Our Gambia android app"></a>
+				<a href="#" class="android-app"><img src="../assets/images/ios-app.png" alt="Our Gambia ios app"></a>
+				<a href="#" class="ios-app"><img src="../assets/images/android-app.png" alt="Our Gambia android app"></a>
 			</div>
 		</div>
 	</div>

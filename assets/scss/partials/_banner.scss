@@ -25,14 +25,14 @@
 		}
 	}
 	&-headline {
+		font-size: 32px;
+	    font-weight: 400;
+	    letter-spacing: 1px;
 		max-width: 565px;
 	    margin: auto;
-	    font-size: 27px;
-	    font-weight: 700;
 	    text-transform: capitalize;
 	    text-align: center;
 	    margin-bottom: 20px;
-	    letter-spacing: 1px;
 	}
 	.search {
 	    width: calc(100% - 30px);

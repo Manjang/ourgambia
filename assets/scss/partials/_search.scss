@@ -1,24 +1,50 @@
 .classifieds-search {
 	width: calc(100% - 30px);
     max-width: 1200px;
-    margin: auto;
+    margin: 50px auto;
     display: flex;
     flex-flow: row wrap;
 
     &--filter {
     	width: calc(20% - 15px);
 	    margin: 0 auto;
-	    background-color: #eeeeee;
-
+	    font-size: 13px;
+	    
     	@media only screen and (max-width: 768px) {
     		width: calc(100% - 30px);
     	}
+    }
+    &--filter-wrap {
+    	background-color: #eeeeee;
+    	padding: 35px 0;
     }
     &--content {
     	width: 60%;
 
     	@media only screen and (max-width: 768px) {
     		width: 100%;
+    	}
+    }
+    &--headline {
+    	font-weight: 600;
+	    font-size: 16px;
+	    border-bottom: 1px solid #000;
+	    margin: 0 20px 10px;
+    }
+    &--price,
+    &--year {
+    	display: flex;
+    	flex-direction: column;
+    	margin: 10px 0;
+
+    	span {
+    		display: flex;
+    		flex-direction: row;
+    	}
+    	input,
+    	select {
+    		width: calc(50% - 15px);
+    		margin: auto;
     	}
     }
     &--ads {
@@ -48,12 +74,16 @@
 	    background-color: #eee;
 	    overflow: hidden;
     }
+    &--cat-wrap {
+	    font-size: 14px;
+	}
     &--cat-all {
     	display: flex;
     	flex-flow: row wrap;
     	border-top: 1px dotted #cacaca;
 	    width: 100%;
 	    margin-top: 10px;
+	    font-size: 13px;
     }
     &--cat-link {
     	display: block;
@@ -73,8 +103,9 @@
 	    padding-bottom: 0;
     }
     &--header-result {
-    	font-weight: 700;
     	font-size: 24px;
+	    font-weight: 400;
+	    letter-spacing: 1px;
     }
 }
 
@@ -162,6 +193,8 @@
 	&-title {
 	    text-decoration: none;
 	    color: #000000;
+	    font-size: 16px;
+    	letter-spacing: 0.5px;
 
 	    &:hover {
 	    	color: $link-color;
@@ -199,6 +232,7 @@
 	    flex-direction: column;
 	    width: calc(50% - 20px);
 	    margin: 0 auto;
+	    font-size: 14px;
 	}
 	&-verified {
 	    width: 20%;

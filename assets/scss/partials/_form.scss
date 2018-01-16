@@ -29,3 +29,29 @@
         }
     }
 }
+
+.place_ad,
+.og-user {
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="url"],
+    select,
+    textarea {
+        padding: 10px;
+        margin: 10px 0;
+        background-color: #ffffff;
+        border: 1px solid $brand-color-alt;
+        border-radius: 5px;
+
+        &:focus {
+            border: 1px solid $link-color;
+            outline: 0;
+        }
+    }
+    input[type="file"] {
+        margin: 10px 0;
+    }
+}

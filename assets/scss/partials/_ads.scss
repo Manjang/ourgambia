@@ -37,3 +37,109 @@
 		background-repeat: no-repeat;
 	}
 }
+
+.place_ad {
+	text-align: center;
+	margin: 0 10px;
+
+	&-headline {
+		margin: 35px 0;
+
+		h2 {
+			font-size: 26px;
+		    font-weight: 400;
+		    letter-spacing: 1px;
+		}
+	}
+	&-category {
+		max-width: 575px;
+    	margin: auto;
+
+    	form {
+    		display: flex;
+    		flex-flow: row wrap;
+    	}
+    	.motors {
+    		background-color: #7c6085;
+    	}
+    	.jobs {
+    		background-color: #ee5a32;
+    	}
+    	.property-for-sale {
+    		background-color: #30a3d8;
+    	}
+    	.property-for-rent {
+    		background-color: #f3bd39;
+    	}
+    	.community {
+    		background-color: #3f80a3;
+    	}
+    	.classifieds {
+    		background-color: #6ab727;
+    	}
+	}
+	&-box {
+		width: calc((100% / 3) - 10px);
+	    margin: 5px auto;
+    	height: 150px;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    flex-direction: column;
+	    text-decoration: none;
+	    color: #000000;
+	    color: #ffffff;
+		border-radius: 5px;
+
+		&:hover {
+		    opacity: 0.8;
+		}
+
+		@media only screen and (max-width: 480px) {
+			width: calc(50% - 10px);
+		}
+	}
+	.taxonomy-card {
+		height: 100px;
+	}
+	span {
+	    font-size: 42px;
+	}
+	h3 {
+	    font-weight: 100;
+	    font-size: 15px;
+	}
+}
+
+.ad_category {
+    background-color: #607D8B;
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #ffffff;
+
+    &:hover {
+    	color: $link-color;
+    }
+    span {
+	    font-size: 20px;
+	    margin-left: 10px;
+	    color: #c70540;
+	}
+}
+
+.add_motor,
+.add_listing {
+	max-width: 500px;
+    margin: 50px auto;
+
+    form {
+    	display: flex;
+    	flex-direction: column;
+    }
+}

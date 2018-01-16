@@ -25,14 +25,20 @@
           justify-content: flex-start; }
         .top-header-card:last-child {
           justify-content: flex-end; } }
+    .top-header-card .btn:hover {
+      background-color: #49c5b6; }
   .top-header a {
     color: #000000;
     text-decoration: none; }
   .top-header--login-link {
     margin-left: 5px; }
+    .top-header--login-link:hover {
+      color: #49c5b6; }
   .top-header--help {
     margin-left: 15px;
     font-size: 25px; }
+    .top-header--help:hover {
+      color: #49c5b6; }
 
 .nav {
   background-color: #0e1027; }
@@ -54,6 +60,10 @@
       .menu-item a:hover {
         color: #49c5b6; }
 
+.header-alt {
+  border-bottom: 1px solid #eeeeee;
+  display: block; }
+
 html,
 body {
   padding: 0;
@@ -61,14 +71,16 @@ body {
   font-family: 'PT Sans', sans-serif; }
 
 .btn {
-  color: #ffffff !important;
+  color: #ffffff;
   background-color: crimson;
   border-radius: 5px;
   padding: 15px 50px;
   text-decoration: none;
   display: inline-block; }
   .btn:hover {
-    color: #000000; }
+    color: #000000;
+    background-color: #49c5b6;
+    transition: 300ms ease-in; }
 
 .banner {
   position: relative;
@@ -94,14 +106,14 @@ body {
       .banner-wrap {
         width: 100%; } }
   .banner-headline {
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1px;
     max-width: 565px;
     margin: auto;
-    font-size: 27px;
-    font-weight: 700;
     text-transform: capitalize;
     text-align: center;
-    margin-bottom: 20px;
-    letter-spacing: 1px; }
+    margin-bottom: 20px; }
   .banner .search {
     width: calc(100% - 30px);
     margin: auto; }
@@ -145,6 +157,46 @@ body {
     margin: 5px;
     padding: 5px; }
 
+.place_ad input[type="text"],
+.place_ad input[type="email"],
+.place_ad input[type="password"],
+.place_ad input[type="number"],
+.place_ad input[type="url"],
+.place_ad select,
+.place_ad textarea,
+.og-user input[type="text"],
+.og-user input[type="email"],
+.og-user input[type="password"],
+.og-user input[type="number"],
+.og-user input[type="url"],
+.og-user select,
+.og-user textarea {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  border: 1px solid #c70540;
+  border-radius: 5px; }
+  .place_ad input[type="text"]:focus,
+  .place_ad input[type="email"]:focus,
+  .place_ad input[type="password"]:focus,
+  .place_ad input[type="number"]:focus,
+  .place_ad input[type="url"]:focus,
+  .place_ad select:focus,
+  .place_ad textarea:focus,
+  .og-user input[type="text"]:focus,
+  .og-user input[type="email"]:focus,
+  .og-user input[type="password"]:focus,
+  .og-user input[type="number"]:focus,
+  .og-user input[type="url"]:focus,
+  .og-user select:focus,
+  .og-user textarea:focus {
+    border: 1px solid #49c5b6;
+    outline: 0; }
+
+.place_ad input[type="file"],
+.og-user input[type="file"] {
+  margin: 10px 0; }
+
 .trending {
   width: calc(100% - 30px);
   max-width: 1200px;
@@ -162,6 +214,8 @@ body {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24);
     color: #333;
     border-radius: 2px; }
+    .trending-card:hover {
+      color: #49c5b6; }
     @media only screen and (max-width: 768px) {
       .trending-card {
         width: calc((100% / 3) - 20px); } }
@@ -255,6 +309,85 @@ body {
     background-position: center;
     background-repeat: no-repeat; }
 
+.place_ad {
+  text-align: center;
+  margin: 0 10px; }
+  .place_ad-headline {
+    margin: 35px 0; }
+    .place_ad-headline h2 {
+      font-size: 26px;
+      font-weight: 400;
+      letter-spacing: 1px; }
+  .place_ad-category {
+    max-width: 575px;
+    margin: auto; }
+    .place_ad-category form {
+      display: flex;
+      flex-flow: row wrap; }
+    .place_ad-category .motors {
+      background-color: #7c6085; }
+    .place_ad-category .jobs {
+      background-color: #ee5a32; }
+    .place_ad-category .property-for-sale {
+      background-color: #30a3d8; }
+    .place_ad-category .property-for-rent {
+      background-color: #f3bd39; }
+    .place_ad-category .community {
+      background-color: #3f80a3; }
+    .place_ad-category .classifieds {
+      background-color: #6ab727; }
+  .place_ad-box {
+    width: calc((100% / 3) - 10px);
+    margin: 5px auto;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000000;
+    color: #ffffff;
+    border-radius: 5px; }
+    .place_ad-box:hover {
+      opacity: 0.8; }
+    @media only screen and (max-width: 480px) {
+      .place_ad-box {
+        width: calc(50% - 10px); } }
+  .place_ad .taxonomy-card {
+    height: 100px; }
+  .place_ad span {
+    font-size: 42px; }
+  .place_ad h3 {
+    font-weight: 100;
+    font-size: 15px; }
+
+.ad_category {
+  background-color: #607D8B;
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #ffffff; }
+  .ad_category:hover {
+    color: #49c5b6; }
+  .ad_category span {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #c70540; }
+
+.add_motor,
+.add_listing {
+  max-width: 500px;
+  margin: 50px auto; }
+  .add_motor form,
+  .add_listing form {
+    display: flex;
+    flex-direction: column; }
+
 .apps {
   max-width: 1200px;
   margin: 0 auto 35px; }
@@ -326,6 +459,8 @@ footer {
     margin-bottom: 0; }
   .ourgambia-logo img {
     vertical-align: middle; }
+  .ourgambia-logo .powered-by {
+    margin-bottom: 10px; }
 
 .classifieds-row {
   max-width: 1200px;
@@ -382,7 +517,7 @@ footer {
   flex-flow: row wrap; }
 
 .service {
-  width: calc(100% / 3);
+  width: calc(100% / 4);
   margin: auto;
   text-decoration: none;
   color: #000000; }
@@ -401,21 +536,41 @@ footer {
 .classifieds-search {
   width: calc(100% - 30px);
   max-width: 1200px;
-  margin: auto;
+  margin: 50px auto;
   display: flex;
   flex-flow: row wrap; }
   .classifieds-search--filter {
     width: calc(20% - 15px);
     margin: 0 auto;
-    background-color: #eeeeee; }
+    font-size: 13px; }
     @media only screen and (max-width: 768px) {
       .classifieds-search--filter {
         width: calc(100% - 30px); } }
+  .classifieds-search--filter-wrap {
+    background-color: #eeeeee;
+    padding: 35px 0; }
   .classifieds-search--content {
     width: 60%; }
     @media only screen and (max-width: 768px) {
       .classifieds-search--content {
         width: 100%; } }
+  .classifieds-search--headline {
+    font-weight: 600;
+    font-size: 16px;
+    border-bottom: 1px solid #000;
+    margin: 0 20px 10px; }
+  .classifieds-search--price, .classifieds-search--year {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0; }
+    .classifieds-search--price span, .classifieds-search--year span {
+      display: flex;
+      flex-direction: row; }
+    .classifieds-search--price input,
+    .classifieds-search--price select, .classifieds-search--year input,
+    .classifieds-search--year select {
+      width: calc(50% - 15px);
+      margin: auto; }
   .classifieds-search--ads {
     width: 20%; }
     @media only screen and (max-width: 768px) {
@@ -434,12 +589,15 @@ footer {
     padding: 10px;
     background-color: #eee;
     overflow: hidden; }
+  .classifieds-search--cat-wrap {
+    font-size: 14px; }
   .classifieds-search--cat-all {
     display: flex;
     flex-flow: row wrap;
     border-top: 1px dotted #cacaca;
     width: 100%;
-    margin-top: 10px; }
+    margin-top: 10px;
+    font-size: 13px; }
   .classifieds-search--cat-link {
     display: block;
     width: calc(100% / 4);
@@ -454,8 +612,9 @@ footer {
     padding-top: 7px;
     padding-bottom: 0; }
   .classifieds-search--header-result {
-    font-weight: 700;
-    font-size: 24px; }
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px; }
 
 .top-ads-wrap {
   display: flex;
@@ -529,7 +688,9 @@ footer {
 
 .featured-ads-title {
   text-decoration: none;
-  color: #000000; }
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0.5px; }
   .featured-ads-title:hover {
     color: #49c5b6; }
 
@@ -562,7 +723,8 @@ footer {
   display: flex;
   flex-direction: column;
   width: calc(50% - 20px);
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 14px; }
 
 .featured-ads-verified {
   width: 20%;
@@ -580,6 +742,360 @@ footer {
   color: #000000; }
   .breadcrumbs:hover {
     color: #49c5b6; }
+
+.not-found {
+  width: calc(100% - 70px);
+  max-width: 720px;
+  line-height: 45px;
+  padding: 20px;
+  margin: 50px auto;
+  text-align: center;
+  font-size: 32px; }
+  .not-found span {
+    color: #c70540; }
+
+.coming-soon {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FDFBF8; }
+  .coming-soon h4 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 0; }
+  .coming-soon span {
+    display: block; }
+
+.og-users {
+  text-align: center;
+  margin: 0 10px;
+  background-color: #FDFBF8; }
+  .og-users--headline {
+    margin: 35px 0; }
+    .og-users--headline h2 {
+      font-size: 26px;
+      font-weight: 400;
+      letter-spacing: 1px; }
+    .og-users--headline h3 {
+      font-weight: 100;
+      font-size: 15px; }
+
+.og-user {
+  display: flex;
+  flex-flow: row wrap;
+  width: calc(100% - 30px);
+  margin: auto; }
+  .og-user--login, .og-user--register {
+    width: calc(50% - 5px); }
+    @media only screen and (max-width: 768px) {
+      .og-user--login, .og-user--register {
+        width: 100%;
+        padding: 35px 0; } }
+    .og-user--login form, .og-user--register form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto; }
+  .og-user--login {
+    border-right: 1px solid #002e63; }
+    @media only screen and (max-width: 768px) {
+      .og-user--login {
+        border-right: none;
+        border-bottom: 1px solid #002e63; } }
+  .og-user--register {
+    border-left: 1px solid #c70540; }
+    @media only screen and (max-width: 768px) {
+      .og-user--register {
+        border-left: none;
+        border-top: 1px solid #c70540; } }
+  .og-user .headline {
+    font-size: 18px;
+    font-weight: 100;
+    border-bottom: 2px solid #eee;
+    max-width: 400px;
+    margin: auto; }
+
+.og-whoswho {
+  display: flex;
+  flex-flow: row wrap; }
+  .og-whoswho-card {
+    width: 25%;
+    height: 0;
+    padding-bottom: calc(25% - 20px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #eeeeee; }
+    @media only screen and (max-width: 1024px) {
+      .og-whoswho-card {
+        width: 50%;
+        padding-bottom: calc(50% - 20px); } }
+    @media only screen and (max-width: 480px) {
+      .og-whoswho-card {
+        width: 100%;
+        padding-bottom: calc(100% - 20px); } }
+    .og-whoswho-card:hover > .og-whoswho--overlay {
+      opacity: 1; }
+  .og-whoswho--overlay {
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100% - 20px);
+    padding: 10px; }
+  .og-whoswho--cta {
+    min-height: 250px;
+    display: flex;
+    background-color: #cecbc6; }
+  .og-whoswho--cta-wrap {
+    margin: auto;
+    text-align: center; }
+  .og-whoswho--cta-headline {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 32px; }
+  .og-whoswho--cta-subheadline {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px; }
+
+.directory {
+  background-color: #FDFBF8; }
+  @media only screen and (max-width: 768px) {
+    .directory .top-header-card .btn {
+      display: none; } }
+
+.og-directory--find {
+  width: calc(100% - 70px);
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+  font-size: 12px;
+  background-image: url(../images/banner.jpg);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 40px; }
+  .og-directory--find .btn {
+    width: calc(10% - 5px);
+    margin: 0 auto 0 10px;
+    text-align: center;
+    padding: 17px 50px;
+    font-size: 25px;
+    border-radius: 30px; }
+    @media only screen and (max-width: 768px) {
+      .og-directory--find .btn {
+        width: calc(100% - 104px);
+        margin: auto; } }
+
+.og-directory--find-wrap {
+  display: flex;
+  flex-flow: row wrap; }
+  .og-directory--find-wrap img {
+    margin: 25px auto;
+    border-radius: 50%;
+    vertical-align: middle; }
+    @media only screen and (min-width: 768px) {
+      .og-directory--find-wrap img {
+        width: calc(10% - 5px); } }
+
+.og-directory--find-block {
+  width: calc(80% - 5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff; }
+  @media only screen and (max-width: 768px) {
+    .og-directory--find-block {
+      flex-direction: column;
+      width: 100%; } }
+
+.og-directory span {
+  width: calc(10% - 5px);
+  margin-left: auto;
+  font-size: 36px; }
+  @media only screen and (max-width: 768px) {
+    .og-directory span {
+      display: none; } }
+
+.og-directory input[type="text"] {
+  width: calc(55% - 5px);
+  font-size: 25px;
+  border-radius: 30px;
+  border: 0;
+  padding: 16px;
+  margin-right: 5px; }
+  @media only screen and (max-width: 768px) {
+    .og-directory input[type="text"] {
+      width: calc(100% - 30px);
+      margin: 10px auto; } }
+
+.og-directory--cta {
+  width: calc(100% - 70px);
+  max-width: 1200px;
+  padding: 20px;
+  margin: 35px auto;
+  border-radius: 35px;
+  background-color: #eeeeee;
+  text-align: center; }
+  .og-directory--cta .btn {
+    padding: 17px 50px;
+    font-size: 25px; }
+
+.og-directory--cta-wrap {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.og-directory--cta-headline {
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0; }
+
+.og-directory--cta-subheadline {
+  font-size: 18px; }
+
+.og-directory--company {
+  display: flex;
+  flex-flow: row wrap;
+  width: calc(100% - 70px);
+  max-width: 1200px;
+  padding: 20px;
+  margin: 35px auto;
+  border-radius: 35px;
+  background-color: #eeeeee; }
+  .og-directory--company span {
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center; }
+    @media only screen and (max-width: 768px) {
+      .og-directory--company span {
+        display: block;
+        margin: 15px 0;
+        font-size: 15px; } }
+  .og-directory--company h2 {
+    font-size: 20px;
+    margin: 5px 0;
+    min-width: 200px; }
+    @media only screen and (max-width: 768px) {
+      .og-directory--company h2 {
+        min-width: 100%;
+        font-size: 16px; } }
+  .og-directory--company a {
+    text-decoration: none;
+    color: #000000; }
+    .og-directory--company a:hover {
+      color: #49c5b6; }
+
+.og-directory--company-logo, .og-directory--company-map {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 768px) {
+    .og-directory--company-logo, .og-directory--company-map {
+      width: 100%;
+      height: 220px; } }
+  .og-directory--company-logo img, .og-directory--company-map img {
+    width: 175px; }
+    @media only screen and (max-width: 768px) {
+      .og-directory--company-logo img, .og-directory--company-map img {
+        width: 150px; } }
+
+.og-directory--company-map {
+  background-color: black;
+  border-radius: 20px; }
+
+.og-directory--company-about {
+  width: calc(80% - 60px);
+  margin: 0 auto;
+  padding: 30px; }
+  @media only screen and (max-width: 768px) {
+    .og-directory--company-about {
+      width: 100%;
+      padding: 0;
+      text-align: center; } }
+
+.og-directory--company-social a {
+  font-size: 26px;
+  margin: 0 20px;
+  color: #49c5b6; }
+  @media only screen and (max-width: 768px) {
+    .og-directory--company-social a {
+      font-size: 20px;
+      margin: 0 10px; } }
+
+.og-directory .listings-search {
+  display: flex;
+  flex-flow: row wrap;
+  width: calc(100% - 30px);
+  max-width: 1200px;
+  margin: auto; }
+
+.og-directory--ads {
+  width: calc(30% - 10px);
+  margin: 0 auto; }
+  .og-directory--ads img {
+    width: 100%; }
+
+.og-directory--listing {
+  width: calc(70% - 5px);
+  max-width: 650px;
+  padding: 20px;
+  margin: 0 auto;
+  font-size: 14px;
+  display: flex;
+  flex-flow: row wrap; }
+
+.og-directory--listing-headline {
+  width: 100%;
+  font-size: 20px;
+  border-bottom: 1px dotted; }
+  .og-directory--listing-headline span {
+    font-size: 22px;
+    color: #49c5b6; }
+
+.og-directory--listing-card {
+  display: flex;
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px auto;
+  border-radius: 35px;
+  background-color: #eeeeee; }
+  .og-directory--listing-card img {
+    width: 20%;
+    height: 120px;
+    max-width: 120px; }
+  .og-directory--listing-card .listing_name {
+    margin: 0;
+    font-size: 18px;
+    display: block; }
+  .og-directory--listing-card a {
+    text-decoration: none;
+    color: #000000; }
+    .og-directory--listing-card a:hover {
+      color: #49c5b6; }
+
+.og-directory--listing-peak {
+  width: calc(50% - 20px);
+  margin: auto; }
+
+.og-directory--listing-socials {
+  width: calc(30% - 20px);
+  margin: auto; }
+  .og-directory--listing-socials a {
+    font-size: 25px;
+    margin: 5px; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome

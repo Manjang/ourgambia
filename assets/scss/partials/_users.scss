@@ -1,0 +1,66 @@
+.og-users {
+	text-align: center;
+	margin: 0 10px;
+	background-color: #FDFBF8;
+
+	&--headline {
+		margin: 35px 0;
+
+		h2 {
+			font-size: 26px;
+		    font-weight: 400;
+		    letter-spacing: 1px;
+		}
+		h3 {
+		    font-weight: 100;
+		    font-size: 15px;
+		}
+	}
+}
+
+.og-user {
+    display: flex;
+    flex-flow: row wrap;
+    width: calc(100% - 30px);
+    margin: auto;
+
+    &--login,
+    &--register {
+    	width: calc(50% - 5px);
+
+    	@media only screen and (max-width: 768px) {
+    		width: 100%;
+    		padding: 35px 0;
+    	}
+
+    	form {
+		    display: flex;
+		    flex-direction: column;
+		    max-width: 400px;
+		    margin: auto;
+		}
+	}
+	&--login {
+	    border-right: 1px solid #002e63;
+
+	    @media only screen and (max-width: 768px) {
+	    	border-right: none;
+	    	border-bottom: 1px solid #002e63;
+	    }
+	}
+	&--register {
+	    border-left: 1px solid #c70540;
+
+	    @media only screen and (max-width: 768px) {
+	    	border-left: none;
+	    	border-top: 1px solid #c70540;
+	    }
+	}
+	.headline {
+	    font-size: 18px;
+	    font-weight: 100;
+	    border-bottom: 2px solid #eee;
+	    max-width: 400px;
+	    margin: auto;
+	}
+}
