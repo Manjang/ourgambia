@@ -1,0 +1,260 @@
+.og-jobs h2 {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.job-categories {
+    margin: 0 auto 35px;
+    max-width: 1150px;
+    padding: 25px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h2 {
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 0.7px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 600;
+    }
+    span {
+        display: block;
+        column-count: 4;
+
+        @media only screen and (max-width: 480px) {
+            column-count: 2;
+        }
+    }
+    a {
+	    margin: auto;
+	    display: block;
+	    text-decoration: none;
+	    color: #ffffff;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-align: center;
+
+        &:hover {
+            color: $link-color;
+        }
+	}
+}
+
+.job-content {
+    width: calc(100% - 30px);
+    max-width: 1200px;
+    margin: 0 auto 35px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.job-list {
+    width: calc(70% - 30px);
+    margin-left: 0;
+    margin-right: auto;
+    border: 1px solid #c6ccc4;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.job-content--sidebar {
+    width: 30%;
+    border: 1px solid #c6ccc4;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.job-card {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 150px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 13px;
+    padding: 10px;
+    background-color: #eeeeee;
+    border-bottom: 5px solid #fff;
+
+    &:hover {
+        background-color: #f5f5f5;
+    }
+
+    span .fa {
+	    font-weight: 400;
+	    opacity: 0.5;
+	}
+}
+
+.job-company-logo {
+    width: calc(30% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+    }
+
+    img {
+	    max-width: 100%;
+	    height: 75px;
+	}
+}
+
+.job-card--headline {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.job-card--meta div {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+
+    @media only screen and (max-width: 480px) {
+        display: block;
+    }
+}
+
+.job-card--meta {
+    width: 70%;
+
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+    }
+}
+
+
+.job-search {
+    max-width: 800px;
+    margin: 0 auto;
+
+    form {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    input[type="text"] {
+        width: calc(80% - 50px);
+        height: 45px;
+        font-size: 20px;
+        padding: 0 20px;
+        outline: none;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        border: transparent;
+
+        @media only screen and (max-width: 768px) {
+            width: calc(100% - 40px);
+        }
+    }
+    .btn {
+        width: calc(20% - 100px);
+        display: inline;
+
+        @media only screen and (max-width: 768px) {
+            width: calc(100% - 100px);
+            text-align: center;
+        }
+    }
+}
+
+.og-job--apps {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.og-sidebar-ad {
+    padding: 0 10px;
+    border-bottom: 5px solid #eeeeee;
+}
+
+.job-mobile-app-ad {
+    text-align: center;
+}
+
+.job-shop-ad {
+    
+    a {
+        display: block;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+
+        @media only screen and (max-width: 768px) {
+            max-width: 300px;
+            height: 350px;
+        }
+    }
+}
+
+.og-sidebar-categories {
+
+    a {
+        display: block;
+        color: #000000;
+        margin: 5px 0;
+        text-decoration: none;
+
+        &:hover {
+            color: $link-color;
+            text-decoration: underline;
+        }
+    }
+}
+
+.og-jobs-single {
+    
+    .job-list {
+        background-color: #eee;
+    }
+}
+
+.single-job {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 10px;
+
+    .job-company-logo img {
+        max-width: 150px;
+        margin: 0 auto;
+        height: 140px;
+    }
+    .job-card--headline {
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+    .job-company-logo {
+        flex-direction: column;
+        justify-content: normal;
+    }
+    .job-company-logo div {
+        font-size: 14px;
+        margin: 10px 0;
+        font-weight: 600;
+        text-align: center;
+    }
+    .job-company-logo span {
+        font-weight: 400;
+        display: block;
+    }
+    .job-card--meta div {
+        flex-direction: column;
+    }
+}
+
+.apply-job-btn {
+    max-width: 325px;
+    margin: 20px auto;
+}

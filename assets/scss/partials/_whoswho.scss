@@ -58,4 +58,289 @@
 	    font-weight: 400;
 	    line-height: 40px;
 	}
+
+
+	&--profile {
+	    width: calc(100% - 70px);
+	    max-width: 1200px;
+	    padding: 20px;
+	    margin: 35px auto;
+	    border-radius: 35px;
+	    background-color: #eeeeee;
+	}
+	&--profile-top,
+	&--profile-bottom {
+		display: flex;
+    	flex-flow: row wrap;
+    	padding-bottom: 30px;
+
+    	h2 {
+		    font-size: 18px;
+		    font-weight: 600;
+		    text-transform: uppercase;
+		    color: #002e63;
+		}
+	}
+	&--profile-bottom {
+
+		@media only screen and (max-width: 480px) {
+			display: table;
+		}
+	}
+	&--profile-top {
+		border-bottom: 1px dotted #000000;
+	}
+	&--profile-pic {
+	    width: 30%;
+	    max-width: 275px;
+	    border-radius: 23px;
+    	height: 300px;
+	    background-size: cover;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	}
+	&--profile-basic {
+	    width: calc(50% - 60px);
+	    padding: 0 30px;
+
+	    div {
+		    margin-bottom: 10px;
+		    display: flex;
+
+		    @media only screen and (max-width: 768px) {
+		    	display: block;
+		    	text-align: center;
+		    }
+		}
+		span {
+			margin-right: auto;
+		    text-transform: uppercase;
+		    font-weight: 600;
+
+		    @media only screen and (max-width: 768px) {
+		    	display: block;
+		    }
+		}
+		a {
+		    color: #000000;
+		    text-decoration: none;
+
+		    &:hover {
+		    	color: $link-color;
+		    }
+		}
+	}
+	&--connect {
+		width: 20%;
+
+		h4 {
+			font-size: 16px;
+		    font-weight: 400;
+		    margin: 0;
+		}
+		span {
+			display: block;
+
+			a {
+				background-color: transparent;
+				display: block;
+				color: #002e63;
+    			width: 100%;
+
+    			&:hover {
+    				background-color: transparent;
+    				color: #dc143c;
+    				transition: 300ms ease-in;
+    			}
+			}
+		}
+		a {
+			display: inline-flex;
+		    background-color: #dc143c;
+		    border-radius: 50%;
+		    width: 50px;
+		    height: 50px;
+		    align-items: center;
+		    justify-content: center;
+		    text-decoration: none;
+		    color: #ffffff;
+
+		    &:hover {
+		    	background-color: #002e63;
+		    	transition: 300ms ease-in;
+		    }
+		}
+	}
+	&--profile-pic,
+	&--profile-basic,
+	&--connect {
+
+		@media only screen and (max-width: 768px) {
+			width: calc(100% - 5px);
+		    margin: 10px auto;
+		    padding: 0;
+		}
+	}
+	&--skills {
+		width: calc(30% - 5px);
+		max-width: 275px;
+		margin: auto;
+    	border-right: 1px dotted #000000;
+	}
+	&--profile-about {
+		width: calc(70% - 60px);
+	    padding: 0 30px;
+
+	    @media only screen and (max-width: 480px) {
+	    	display: table-header-group;
+	    }
+	}
+	&--skills,
+	&--profile-about {
+
+		@media only screen and (max-width: 480px) {
+			width: 100%;
+			border-right: 1px dotted transparent;
+		}
+	}
+}
+
+
+
+.og-ww {
+
+	.search-whoswho {
+	    max-width: 600px;
+	    margin: 35px auto;
+	    text-align: center;
+	}
+
+	.search-whoswho input[type="text"] {
+	    padding: 12px 20px;
+	    width: 315px;
+	    border-radius: 5px;
+	    outline: 0;
+	    border: 1px solid #002e63;
+	}
+
+
+
+
+
+
+
+
+	.whoswho {
+		width: calc(100% - 30px);
+		max-width: 1200px;
+		margin: auto;
+	}
+	.whoswho-headline {
+		text-align: center;
+	}
+
+	.whoswho-wrap {
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	.whoswho-card {
+	    width: calc(100% - 15px);
+	    margin: 0 auto 35px;
+	    border: 5px solid #eeeeee;
+	    border-radius: 23px;
+	    height: 300px;
+	    text-decoration: none;
+	    color: #000000;
+	    background-size: cover;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    position: relative;
+
+	    @media only screen and (min-width: 480px) {
+	    	width: calc((100% / 2) - 15px);
+	    }
+	    @media only screen and (min-width: 768px) {
+	    	width: calc((100% / 3) - 15px);
+	    }
+	    @media only screen and (min-width: 1024px) {
+	    	width: calc((100% / 4) - 15px);
+	    }
+	}
+
+	.whoswho-card:hover>div {
+		background-color: #002e63;
+		color: #ffffff;
+		transition: 300ms ease-in;
+		border-bottom-left-radius: 20px;
+	    border-bottom-right-radius: 20px;
+	}
+
+	.whoswho-card--desc {
+		width: 100%;
+		min-height: 70px;
+		position: absolute;
+		bottom: 0;
+		background-color: #eeeeee;
+		text-align: center;
+	}
+
+	.whoswho-profile--name {
+	    margin: 5px;
+	    font-size: 14px;
+	    text-transform: uppercase;
+	    letter-spacing: 1px;
+	}
+
+	.whoswho-profile--position,
+	.whoswho-profile--company {
+	    margin: 5px;
+	    font-size: 15px;
+	    font-weight: 400;
+	}
+
+	.whoswho-profile--position {
+	    border-bottom: 1px solid #c70540;
+	}
+
+
+
+	.whoswho--cta {
+		width: calc(100% - 30px);
+		max-width: 1200px;
+	    margin: 0 auto 35px;
+	    border-radius: 32px;
+		min-height: 250px;
+	    display: flex;
+	    background-color: #eeeeee;
+	}
+	.whoswho--cta-wrap {
+	    margin: auto;
+	    text-align: center;
+	}
+	.whoswho--cta-headline {
+		font-size: 23px;
+	    font-weight: 400;
+	    line-height: 32px;
+	}
+	.whoswho--cta-subheadline {
+		font-size: 16px;
+	    font-weight: 400;
+	    line-height: 40px;
+	}
+
+
+	.help {
+		max-width: 800px;
+		margin: 35px auto;
+		text-align: center;
+		font-size: 13px;
+
+		h2 {
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 0.8px;
+		}
+	}
+
 }

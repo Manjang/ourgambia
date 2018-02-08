@@ -55,3 +55,26 @@
         margin: 10px 0;
     }
 }
+
+.add-option {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+
+    a {
+        text-decoration: none;
+        width: calc(50% - 10px);
+        color: #ffffff;
+        background-color: #dc143c;
+        min-height: 120px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: $link-color;
+            transition: 300ms ease-in;
+        }
+    }
+}
