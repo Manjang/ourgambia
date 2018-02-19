@@ -18,7 +18,7 @@
 		width: calc(100% - 70px);
 		max-width: 1200px;
 	    padding: 20px;
-	    margin: 0 auto;
+	    margin: 35px auto 0;
 	    font-size: 12px;
 	    background-image: url(../images/banner.jpg);
 	    height: 100%;
@@ -93,11 +93,9 @@
     }
     
     &--cta {
-    	width: calc(100% - 70px);
-	    max-width: 1200px;
-	    padding: 20px;
+    	width: 100%;
+	    padding-top: 20px;
 	    margin: 35px auto;
-	    border-radius: 35px;
 	    background-color: #eeeeee;
 	    text-align: center;
 

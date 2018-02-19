@@ -36,7 +36,6 @@ footer {
 
 .footer {
 	background-color: #0e1027;
-    margin-top: 35px;
 
     a {
     	color: #888888;
@@ -44,6 +43,10 @@ footer {
     &-top {
     	padding: 35px 0 25px;
     	border-bottom: 1px solid #666;
+
+    	@media only screen and (max-width: 480px) {
+    		text-align: center;
+    	}
     }
     &-top--wrap,
     &-bottom--wrap {

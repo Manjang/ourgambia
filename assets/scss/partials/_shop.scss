@@ -1,0 +1,87 @@
+.shop-header {
+	
+	&--top {
+		background-color: black;
+	}
+	&--wrap {
+		max-width: 1200px;
+	    margin: 0 auto;
+	    display: flex;
+	    flex-flow: row wrap;
+	    justify-content: space-between;
+	    align-items: center;
+
+	    ul {
+	    	padding: 0;
+		    margin: 3px 0;
+		    list-style: none;
+		    display: flex;
+		    width: 50%;
+	    }
+	    li {
+	    	margin: 0 10px;
+	    }
+	    a {
+	    	color: #ffffff;
+		    text-decoration: none;
+		    font-size: 12px;
+		    font-weight: 400;
+	    }
+	}
+	&--bottom {
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+	}
+	&--logo-burger {
+
+	}
+	&--burger-menu {
+
+	}
+	&--logo {
+
+	}
+	&--search {
+
+	}
+	&--search-form {
+
+	}
+	&--login-cart {
+
+	}
+	&--login {
+
+	}
+	&--cart {
+
+	}
+	&--logo-burger,
+	&--login-cart {
+	    width: 20%;
+
+	    img {
+	    	width: 100%;
+	    }
+	}
+	&--search {
+	    width: calc(60% - 30px);
+	    margin: 0 auto;
+	}
+	&--search-form {
+	    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    	border: 1px solid black;
+
+	    input[type="text"] {
+	    	height: 40px;
+		    padding: 4px 12px 7px 36px;
+		    border-radius: 2px 0 0 2px;
+		    border: 0;
+		    font-size: 14px;
+		    background-color: #fff;
+		    box-shadow: none;
+		    display: inline-block;
+		    width: calc(100% - 140px);
+		    outline: 0;
+	    }
+	}
+}
