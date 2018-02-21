@@ -1882,6 +1882,65 @@ footer {
     text-decoration: none;
     margin: 3px 0; }
 
+.job-profile--wrap {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto; }
+
+.job-profile--personal {
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 1px dashed #343434; }
+
+.job-profile--image {
+  width: 40%; }
+  .job-profile--image img {
+    width: 100%;
+    height: 350px; }
+
+.job-profile--personal-info {
+  width: calc(60% - 30px);
+  max-width: 300px;
+  margin: 0 auto 0 15px; }
+  .job-profile--personal-info div {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between; }
+
+.job-profile--personal-title {
+  margin-top: 0; }
+
+.job-profile .job-educational {
+  border-bottom: 1px dashed #343434; }
+  .job-profile .job-educational--sch {
+    width: calc(100% - 50px);
+    margin-left: auto; }
+  .job-profile .job-educational--sch-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center; }
+
+.job-profile .job-employment {
+  border-bottom: 1px dashed #343434; }
+  .job-profile .job-employment--employer {
+    width: calc(100% - 50px);
+    margin-left: auto; }
+  .job-profile .job-employment--employer-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center; }
+  .job-profile .job-employment--position {
+    margin-bottom: 10px; }
+  .job-profile .job-employment--duties {
+    margin-bottom: 15px; }
+  .job-profile .job-employment--reason-for-leaving {
+    margin-bottom: 15px; }
+
+.job-profile .job-skills {
+  border-bottom: 1px dashed #343434; }
+
 .shop-header--top {
   background-color: black; }
 
